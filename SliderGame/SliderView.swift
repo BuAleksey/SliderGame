@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SliderView: View {
     @Binding var value: Float
-    @Binding var opacity: Int
+    @Binding var opacity: Double
     
     var body: some View {
         Slider(value: $value, opacity: $opacity)

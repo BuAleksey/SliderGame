@@ -11,7 +11,7 @@ import SwiftUI
 struct SliderGameApp: App {
     var body: some Scene {
         WindowGroup {
-            Slider(value: .constant(50), opacity: .constant(1))
+            GameView()
         }
     }
 }
