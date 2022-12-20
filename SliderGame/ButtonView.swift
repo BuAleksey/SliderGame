@@ -21,6 +21,7 @@ struct ButtonView: View {
             .stroke(.black, lineWidth: 0.5)
             .frame(width: 200)
         )
+        .shadow(radius: 5)
     }
 }
 

@@ -19,14 +19,15 @@ struct GameView: View {
     
     var body: some View {
         VStack(spacing: 15) {
-            Text("Подвинь слайдер, как можно ближе к \(targetValue)")
+            Text("Подвинь слайдер, как можно ближе к: \(targetValue)")
                 .font(.title)
+                .bold()
                 .multilineTextAlignment(.center)
+                .shadow(radius: 5)
             
             SliderView(value: $currentValue, opacity: $opacity)
-                .onChange(of: currentValue) { newValue in
+                .onChange(of: currentValue) { _ in
                     opacity = Double(result)
-                    print(opacity)
                 }
             
             ButtonView(action: chekResult, title: "Проверь меня")
